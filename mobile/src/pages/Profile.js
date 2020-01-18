@@ -1,9 +1,8 @@
-import React from "react";
-import { View } from "react-native";
-import { WebView } from "react-native-webview";
+import React from 'react';
+import { WebView } from 'react-native-webview';
 
 function Profile({ navigation }) {
-  const githubUsername = navigation.getParam('github_username')
+  const githubUsername = navigation.getParam('github_username');
 
   return (
     <WebView

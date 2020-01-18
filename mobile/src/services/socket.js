@@ -1,7 +1,7 @@
-import socketio from "socket.io-client";
+import socketio from 'socket.io-client';
 
-const socket = socketio("http://192.168.15.34:3333", {
-  autoConnect: false
+const socket = socketio('http://192.168.15.34:3333', {
+  autoConnect: false,
 });
 
 function subscribeToNewDevs(subscribeFunction) {
@@ -12,7 +12,7 @@ function connect(latitude, longitude, techs) {
   socket.io.opts.query = {
     latitude,
     longitude,
-    techs
+    techs,
   };
 
   socket.connect();
